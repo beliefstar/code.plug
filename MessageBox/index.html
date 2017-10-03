@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<button id="btn">按钮</button>
+	<button id="btn2">按钮</button>
+
+
+
+
+
+<script src="MessageBox.js"></script>
+<script type="text/javascript">
+	document.getElementById('btn').onclick = function(){
+		//MessageBox.alert('出错了','错误信息');
+		/*var item = document.createElement('div');
+		item.className = 'tipe-item';
+		document.getElementsByClassName('message-tipe')[0].appendChild(item);
+		*/
+		MessageBox.tipe('<i>哈哈哈</i>','rightTop');
+	}
+	document.getElementById('btn2').onclick = function(){
+		MessageBox.tipe('<i>2222</i>');
+	}
+</script>
+</body>
+</html>
